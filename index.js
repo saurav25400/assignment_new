@@ -24,7 +24,7 @@ const corsOptions = {
 
 server.use(express.json())
 server.get("/",(req,res,next)=>{
-    return res.status(200),send("welcome to express server!!!")
+    return res.status(200).send("welcome to express server!!!");
 })
 server.use("/api/v1/user",router);
 
